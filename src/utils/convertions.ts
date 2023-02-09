@@ -1,15 +1,18 @@
-const MONTHS = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez']
+const MONTHS = [
+	'Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun',
+	'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'
+]
 
 type DateFormats = 'dd/mm/yyyy' | 'full'
 
 export function dateToString(d: Date, format: DateFormats) {
-	const [year, month, day] = [d.getFullYear(), d.getMonth() + 1, d.getDate()]
+	const [year, month, day] = [d.getFullYear(), d.getMonth(), d.getDate()]
 	let dateStr = ''
 
 	if (format === 'dd/mm/yyyy') {
 		dateStr = [
 			year,
-			String(month).padStart(2, '0'),
+			String(month + 1).padStart(2, '0'),
 			String(day).padStart(2, '0')
 		].join('-')
 	} else {
