@@ -1,0 +1,55 @@
+aside {
+	height: vh-100;
+	overflow-y: auto;
+	width: 45%;
+	min-width: 480px;
+	padding: 24px;
+}
+
+h2 {
+	margin-bottom: 16px;
+	font-size: 30px;
+}
+
+.event-container {
+	border: 2px solid var(--gray-500);
+	border-radius: 4px;
+	padding: 12px;
+	margin: 12px 0;
+	background-color: var(--gray-700);
+	display: flex;
+	justify-content: space-between;
+}
+
+.event-header {
+	margin-bottom: 24px;
+}
+
+h3 {
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+.countdown-container {
+	display: flex;
+	justify-content: space-between;
+	column-gap: 8px;
+	margin-top: 20px;
+}
+
+.time-container {
+	text-align: center;
+	width: 80px;
+}
+
+.time {
+	border-bottom: 4px solid var(--blue-600);
+	margin-bottom: 4px;
+}
+
+.btn-close {
+	background: none;
+	border: none;
+	font-size: 20px;
+	color: var(--gray-100);
+}

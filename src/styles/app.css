@@ -1,0 +1,51 @@
+.container {
+	display: flex;
+}
+
+main {
+	width: 55%;
+	height: 100vh;
+	padding: 24px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: var(--gray-700);
+}
+
+h1 {
+	margin-bottom: 16px;
+	font-size: 36px;
+}
+
+label, input {
+	display: block;
+}
+
+input {
+	color: var(--gray-900);
+	outline: none;
+	border: none;
+	border-radius: 4px;
+	padding: 14px 8px;
+	width: 100%;
+	margin: 8px 0;
+	font-size: 16px;
+}
+
+.input-group {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 16px;
+	column-gap: 16px;
+}
+
+button#start {
+	width: 100%;
+	margin-top: 20px;
+	padding: 12px;
+	border-radius: 4px;
+	background-color: var(--blue-800);
+	font-size: 20px;
+	color: var(--gray-50);
+}
