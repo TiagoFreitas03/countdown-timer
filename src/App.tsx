@@ -8,13 +8,14 @@ import './styles/app.css'
 
 export function App() {
 	const [name, setName] = useState('')
-	const [date, setDate] = useState(dateToString(new Date(), 'dd/mm/yyyy'))
+	const [date, setDate] = useState('')
 	const [time, setTime] = useState('00:00:00')
 
 	const [now, setNow] = useState(Math.floor(Date.now() / 1000))
 	const [events, setEvents] = useState<IEvent[]>([])
 
 	useEffect(() => {
+		setDate(dateToString(new Date(), 'dd/mm/yyyy'))
 		const localEvents = localStorage.getItem('events')
 
 		if (localEvents) {
